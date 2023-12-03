@@ -183,7 +183,6 @@ img {
 }
 
 .nav__link {
-    color: var(--light-grey-color);
     font-size: var(--h2-font-size);
     text-transform: uppercase;
     font-weight: var(--font-semi-bold);
@@ -342,22 +341,22 @@ img {
 }
 
 /*=============== CASE ===============*/
-.case__container {
+.team__container {
     position: relative;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.case__data {
+.team__data {
     padding: 5rem 0 3rem;
 }
 
-.case__img {
+.team__img {
     width: 250px;
     position: absolute;
     left: -7rem;
 }
 
-.case__description {
+.team__description {
     margin-bottom: var(--mb-1-5);
     line-height: var(--text-line-height);
 }
@@ -592,17 +591,17 @@ img {
         width: 200px;
     }
 
-    .case__container {
+    .team__container {
         grid-template-columns: .6fr 1fr;
     }
 
-    .case__img {
+    .team__img {
         width: 220px;
         top: -2rem;
         left: -9rem;
     }
 
-    .case__data {
+    .team__data {
         padding: 0;
     }
 
@@ -637,15 +636,15 @@ img {
         align-items: center;
     }
 
-    .case__img {
+    .team__img {
         position: initial;
     }
 
-    .case__data {
+    .team__data {
         padding: 0;
     }
 
-    .case__container {
+    .team__container {
         grid-template-columns: max-content 250px;
         justify-content: center;
         align-items: center;
@@ -717,15 +716,15 @@ img {
         width: 300px;
     }
 
-    .case__container {
+    .team__container {
         column-gap: 5rem;
     }
 
-    .case__img {
+    .team__img {
         width: 300px;
     }
 
-    .case__description {
+    .team__description {
         margin-bottom: var(--mb-2);
     }
 
