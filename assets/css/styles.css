@@ -345,6 +345,10 @@ img {
     right: -4rem;
 }
 
+.features__data:nth-child(1), .features__data:nth-child(4) {
+    margin-left: 1.5rem;
+}
+
 /*=============== CASE ===============*/
 .team__container {
     position: relative;
