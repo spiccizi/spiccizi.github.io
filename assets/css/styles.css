@@ -392,7 +392,7 @@ img {
 }
 
 .survey__img {
-    width: 500px;
+    width: 300px;
     position: absolute;
     top: 4rem;
     right: -8rem;
@@ -758,10 +758,6 @@ img {
 
     .sponsor__img {
         width: 100px;
-    }
-
-    .survey__img {
-        width: 550px;
     }
 
     .footer__container {
