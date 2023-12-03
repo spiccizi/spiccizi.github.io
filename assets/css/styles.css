@@ -402,8 +402,8 @@ img {
 /*=============== FOOTER ===============*/
 .footer__container {
     gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__logo {
@@ -569,11 +569,6 @@ img {
 
     .team__data {
         padding: 0;
-    }
-
-    .footer__container {
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 2fr;
     }
 
     .footer__call_to_action {
