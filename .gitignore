@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# WebStorm
+.idea/
+
+# Compiled files
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Package manager files
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Editor-specific files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
