@@ -30,7 +30,7 @@
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-    /*========== Margenes Bottom ==========*/
+    /*========== Margins & Bottom ==========*/
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
     --mb-1: 1rem;
@@ -40,6 +40,9 @@
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+    /* ========= Opacity ========== */
+    --full-opacity: 100%;
+    --overlap-opacity: 15%;
 }
 
 @media screen and (min-width: 968px) {
@@ -339,11 +342,11 @@ img {
 
 
 .features__img {
-    width: 400px;
+    width: 800px;
     position: absolute;
     top: 2rem;
     right: -10rem;
-    opacity: 15%;
+    opacity: var(--overlap-opacity);
 }
 
 .features__data:nth-child(1), .features__data:nth-child(4) {
@@ -389,10 +392,11 @@ img {
 }
 
 .survey__img {
-    width: 300px;
+    width: 500px;
     position: absolute;
     top: 4rem;
-    right: -11rem;
+    right: -8rem;
+    opacity: var(--overlap-opacity);
 }
 
 /*=============== FOOTER ===============*/
@@ -680,7 +684,7 @@ img {
     }
 
     .features__img {
-        opacity: 100%;
+        opacity: var(--full-opacity);
     }
 
     .team__container {
@@ -710,6 +714,11 @@ img {
     .survey__description {
         margin-bottom: var(--mb-2);
     }
+
+    .survey__img {
+        opacity: var(--full-opacity);
+    }
+
 
     .products__container {
         grid-template-columns: repeat(3, 162px);
@@ -752,7 +761,7 @@ img {
     }
 
     .survey__img {
-        width: 350px;
+        width: 550px;
     }
 
     .footer__container {
