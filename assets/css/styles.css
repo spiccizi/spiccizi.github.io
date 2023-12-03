@@ -234,7 +234,7 @@ img {
 
 /*=============== HOME ===============*/
 .home__img {
-    /* min-width: 300px; */
+    min-width: 300px;
     /* position: absolute; */
     /* top: -16rem; */
     right: 1.5rem;
@@ -580,7 +580,7 @@ img {
     }
 
     .home__img {
-        width: 200px;
+        /*width: 200px;*/
         top: -13rem;
     }
 
@@ -783,7 +783,7 @@ img {
     }
 
     .home__img {
-        width: 300px;
+        /*width: 300px;*/
         top: -15rem;
     }
 

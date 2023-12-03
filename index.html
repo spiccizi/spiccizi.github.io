@@ -49,7 +49,11 @@
     <section class="home section" id="home">
         <div class="home__container container grid">
             <div>
-                <img src="assets/img/se-therapy.png" alt="" class="home__img">
+                <picture>
+                    <source media="(max-width: 575px)" srcset="assets/img/se-home-h.png">
+                    <source media="(min-width: 576px)" srcset="assets/img/se-home-v.png">
+                    <img alt="Network di medici" class="home__img" src="assets/img/se-home-v.png">
+                </picture>
             </div>
 
             <div class="home__data">
@@ -122,23 +126,23 @@
     </section>
 
     <!--=============== TEAM ===============-->
-<!--    <section class="section grid" id="team">-->
-<!--        <h2 class="section__title section__title-gradient">Chi siamo</h2>-->
-<!--        <div class="team__container container grid">-->
-<!--            <div>-->
-<!--                <img src="assets/img/case.png" alt="" class="team__img">-->
-<!--            </div>-->
+    <!--    <section class="section grid" id="team">-->
+    <!--        <h2 class="section__title section__title-gradient">Chi siamo</h2>-->
+    <!--        <div class="team__container container grid">-->
+    <!--            <div>-->
+    <!--                <img src="assets/img/case.png" alt="" class="team__img">-->
+    <!--            </div>-->
 
-<!--            <div class="team__data">-->
-<!--                <p class="team__description">With a comfortable and adaptable case so that you can-->
-<!--                    store it whenever you want, and keep your durability forever.-->
-<!--                </p>-->
-<!--                <a href="#" class="button button&#45;&#45;flex">-->
-<!--                    <i class="ri-information-line button__icon"></i> More info-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <!--            <div class="team__data">-->
+    <!--                <p class="team__description">With a comfortable and adaptable case so that you can-->
+    <!--                    store it whenever you want, and keep your durability forever.-->
+    <!--                </p>-->
+    <!--                <a href="#" class="button button&#45;&#45;flex">-->
+    <!--                    <i class="ri-information-line button__icon"></i> More info-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
 
     <!--=============== QUESTIONARIO ===============-->
     <section class="discount section">
