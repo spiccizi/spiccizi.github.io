@@ -339,10 +339,11 @@ img {
 
 
 .features__img {
-    width: 250px;
+    width: 400px;
     position: absolute;
     top: 2rem;
-    right: -4rem;
+    right: -10rem;
+    opacity: 15%;
 }
 
 .features__data:nth-child(1), .features__data:nth-child(4) {
@@ -552,10 +553,6 @@ img {
         font-size: var(--small-font-size);
     }
 
-    .features__img {
-        width: 200px;
-    }
-
     .team__container {
         grid-template-columns: .6fr 1fr;
     }
@@ -683,7 +680,7 @@ img {
     }
 
     .features__img {
-        width: 300px;
+        opacity: 100%;
     }
 
     .team__container {
