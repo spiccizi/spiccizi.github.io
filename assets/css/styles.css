@@ -641,9 +641,8 @@ img {
         position: initial;
     }
 
-    .products__container {
-        grid-template-columns: repeat(3, 142px);
-        justify-content: center;
+    .footer__container {
+        justify-content: start;
     }
 }
 
