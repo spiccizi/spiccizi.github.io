@@ -1,6 +1,5 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
+const navMenu = document.getElementById('nav-menu'), navToggle = document.getElementById('nav-toggle'),
   navClose = document.getElementById('nav-close')
 
 /*===== MENU SHOW =====*/
@@ -69,11 +68,29 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive)
 
+
+document.getElementById('email-form').addEventListener('submit', function (event) {
+  event.preventDefault()
+
+  // Get the email input value
+  let email = document.getElementById('email-input').value
+
+  // Prepare the data for the API request
+  let requestData = {email: email}
+
+  // Use the Fetch API to make a POST request to the Sendinblue API
+  fetch('https://mail-collection.vercel.app/subscribe', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(requestData),
+  })
+    .then(() => alert("Thank you!"))
+    .catch((error) => console.error('Error:', error))
+})
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
-  distance: '60px',
-  duration: 2500,
-  delay: 400,
+  distance: '60px', duration: 2500, delay: 400,
 })
 
 sr.reveal(`.home__header, .section__title`, {delay: 600})

@@ -404,6 +404,8 @@ img {
 
 .email__input {
     width: 100%;
+    padding-left: .2rem;
+    padding-right: .2rem;
     background-color: var(--container-color);
     color: var(--text-color);
     border-bottom: .1rem solid var(--dark-grey-color);
