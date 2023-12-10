@@ -528,7 +528,6 @@ img {
     line-height: 6rem;
     font-size: var(--biggest-font-size);
     background: var(--text-gradient);
-    /*color: var(--text-gradient);*/
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -544,13 +543,14 @@ img {
 }
 
 .thanks__subtitle {
-    font-size: var(--big-font-size);
+    font-size: var(--medium-font-size);
     z-index: var(--z-fixed);
 }
 
 .thanks__footer {
     display: flex;
     justify-content: end;
+    padding: 0 2rem;
 }
 
 
@@ -636,8 +636,8 @@ img {
         text-align: center;
     }
 
-    .thanks__subtitle {
-        font-size: var(--medium-font-size);
+    .thanks__footer {
+        padding: 0 .5rem;
     }
 }
 
@@ -742,19 +742,8 @@ img {
     }
 
 
-    .products__container {
-        grid-template-columns: repeat(3, 162px);
-        gap: 6rem 3rem;
-        padding-top: 5rem;
-    }
-
-    .products__card {
-        height: 152px;
-        padding: .85rem;
-    }
-
-    .products__img {
-        width: 95px;
+    .thanks__subtitle {
+        font-size: var(--big-font-size);
     }
 }
 
