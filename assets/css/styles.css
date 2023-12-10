@@ -355,6 +355,7 @@ img {
 
 /*=============== TEAM ===============*/
 .team__container {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -621,10 +622,6 @@ img {
         font-size: var(--small-font-size);
     }
 
-    .team__container {
-        flex-direction: column;
-    }
-
     .team__polaroid {
         width: 300px;
     }
@@ -737,6 +734,10 @@ img {
 
     .survey__img {
         opacity: var(--full-opacity);
+    }
+
+    .team__container {
+        flex-direction: row;
     }
 
 
