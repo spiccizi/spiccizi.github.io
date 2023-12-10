@@ -69,6 +69,9 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 
+/*============== EMAIL SUBSCRIPTION =============================*/
+
+
 document.getElementById('email-form').addEventListener('submit', function (event) {
   event.preventDefault()
 
@@ -84,7 +87,7 @@ document.getElementById('email-form').addEventListener('submit', function (event
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(requestData),
   })
-    .then(() => alert("Thank you!"))
+    .then(() => window.location.href = "thank-you.html")
     .catch((error) => console.error('Error:', error))
 })
 
@@ -99,6 +102,6 @@ sr.reveal(`.home__img`, {delay: 900, origin: 'top'})
 
 sr.reveal(`.sponsor__img, .footer__logo, .footer__content, .footer__copy`, {origin: 'top', interval: 100})
 sr.reveal(`.features__data, .email__animate`, {origin: 'left', interval: 100})
-sr.reveal(`.features__img, .survey__img`, {origin: 'right'})
+sr.reveal(`.features__img`, {origin: 'right'})
 sr.reveal(`.team__img`, {origin: 'top'})
 sr.reveal(`.team__data`)

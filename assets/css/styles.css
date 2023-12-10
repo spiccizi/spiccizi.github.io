@@ -22,6 +22,7 @@
     --biggest-font-size: 5rem;
     --bigger-font-size: 3.5rem;
     --big-font-size: 2.5rem;
+    --medium-font-size: 1.8rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
@@ -239,8 +240,6 @@ img {
 /*=============== HOME ===============*/
 .home__img {
     min-width: 300px;
-    /* position: absolute; */
-    /* top: -16rem; */
     right: 1.5rem;
 }
 
@@ -395,6 +394,10 @@ img {
 }
 
 .email__form {
+    width: 100%;
+}
+
+.email__data {
     display: flex;
     width: 100%;
     gap: .5rem;
@@ -416,13 +419,6 @@ img {
     font-family: var(--body-font);
 }
 
-.survey__img {
-    width: 300px;
-    position: absolute;
-    top: 4rem;
-    right: -8rem;
-    opacity: var(--overlap-opacity);
-}
 
 /*=============== FOOTER ===============*/
 .footer__container {
@@ -500,6 +496,42 @@ img {
     text-align: right;
 }
 
+/*=============== THANK YOU ================*/
+.thanks__container {
+    margin: 4rem 0 4rem 0;
+}
+
+.thanks__title {
+    position: absolute;
+    top: -4rem;
+    line-height: 6rem;
+    font-size: var(--biggest-font-size);
+    background: var(--text-gradient);
+    /*color: var(--text-gradient);*/
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.thanks__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*gap: 2rem;*/
+}
+
+.thanks__subtitle {
+    font-size: var(--big-font-size);
+    z-index: var(--z-fixed);
+}
+
+.thanks__footer {
+    display: flex;
+    justify-content: end;
+}
+
+
 /*=============== SCROLL UP ===============*/
 .scrollup {
     position: fixed;
@@ -557,7 +589,6 @@ img {
     }
 
     .home__img {
-        /*width: 200px;*/
         top: -13rem;
     }
 
@@ -590,6 +621,10 @@ img {
 
     .footer__call_to_action {
         text-align: center;
+    }
+
+    .thanks__subtitle {
+        font-size: var(--medium-font-size);
     }
 }
 
@@ -634,7 +669,7 @@ img {
         column-gap: 2rem;
     }
 
-    .email__form {
+    .email__data {
         width: 60%;
     }
 
