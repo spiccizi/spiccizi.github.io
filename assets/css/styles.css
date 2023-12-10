@@ -355,24 +355,39 @@ img {
 
 /*=============== TEAM ===============*/
 .team__container {
+    justify-content: center;
+    align-items: center;
     position: relative;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
-.team__data {
-    padding: 5rem 0 3rem;
+.team__polaroid {
+    max-width: 500px;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.7rem;
+    overflow: hidden;
 }
 
-.team__img {
-    width: 250px;
-    position: absolute;
-    left: -7rem;
+.team__polaroid::after {
+    content: 'Spiccìzì \'23';
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
 }
 
-.team__description {
-    margin-bottom: var(--mb-1-5);
-    line-height: var(--text-line-height);
+.team__polaroid_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd; /* Optional: Add a border around the image */
+    border-radius: 5px;
 }
+
+
 
 /*=============== EMAIL COLLECTION ===============*/
 .email__container {
@@ -607,18 +622,13 @@ img {
     }
 
     .team__container {
-        grid-template-columns: .6fr 1fr;
+        flex-direction: column;
     }
 
-    .team__img {
-        width: 220px;
-        top: -2rem;
-        left: -9rem;
+    .team__polaroid {
+        width: 300px;
     }
 
-    .team__data {
-        padding: 0;
-    }
 
     .footer__call_to_action {
         text-align: center;
@@ -655,20 +665,6 @@ img {
         align-items: center;
     }
 
-    .team__img {
-        position: initial;
-    }
-
-    .team__data {
-        padding: 0;
-    }
-
-    .team__container {
-        grid-template-columns: max-content 250px;
-        justify-content: center;
-        align-items: center;
-        column-gap: 2rem;
-    }
 
     .email__data {
         width: 60%;
@@ -733,17 +729,6 @@ img {
         opacity: var(--full-opacity);
     }
 
-    .team__container {
-        column-gap: 5rem;
-    }
-
-    .team__img {
-        width: 300px;
-    }
-
-    .team__description {
-        margin-bottom: var(--mb-2);
-    }
 
     .email__title {
         font-size: var(--h2-font-size);
