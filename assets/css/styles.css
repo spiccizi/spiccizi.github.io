@@ -363,13 +363,18 @@ img {
 }
 
 .team__polaroid {
-    max-width: 500px;
+    max-width: 800px;
     padding: 0.5rem 0.5rem 1rem 0.5rem;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.7rem;
     overflow: hidden;
 }
+
+.team__data {
+    padding: 0 2rem;
+}
+
 
 .team__polaroid::after {
     content: 'Spiccìzì \'23';
@@ -734,10 +739,6 @@ img {
 
     .survey__img {
         opacity: var(--full-opacity);
-    }
-
-    .team__container {
-        flex-direction: row;
     }
 
 
