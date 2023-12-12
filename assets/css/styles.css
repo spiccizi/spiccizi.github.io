@@ -332,7 +332,10 @@ img {
 
 .features__data {
     display: grid;
-    row-gap: .25rem;
+    /*row-gap: .25rem;*/
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .features__title {
@@ -342,15 +345,11 @@ img {
 
 
 .features__img {
-    width: 800px;
+    width: 100px;
     position: absolute;
-    top: 2rem;
-    right: -10rem;
+    top: 1rem;
+    right: -2rem;
     opacity: var(--overlap-opacity);
-}
-
-.features__data:nth-child(1), .features__data:nth-child(4) {
-    margin-left: 3rem;
 }
 
 /*=============== TEAM ===============*/
@@ -393,7 +392,6 @@ img {
     border: 1px solid #ddd; /* Optional: Add a border around the image */
     border-radius: 5px;
 }
-
 
 
 /*=============== EMAIL COLLECTION ===============*/
@@ -632,6 +630,10 @@ img {
         width: 300px;
     }
 
+    .features__data {
+        grid-template-columns: 1fr;
+    }
+
 
     .footer__call_to_action {
         text-align: center;
@@ -660,6 +662,8 @@ img {
 
     .features__img {
         position: initial;
+        opacity: var(--full-opacity);
+
     }
 
     .features__container {
@@ -726,10 +730,6 @@ img {
 
     .home__data {
         padding-top: 8rem;
-    }
-
-    .features__img {
-        opacity: var(--full-opacity);
     }
 
 
