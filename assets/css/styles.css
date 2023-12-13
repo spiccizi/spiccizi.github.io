@@ -392,6 +392,30 @@ img {
     border-radius: 5px;
 }
 
+/*=============== SURVEY ===============*/
+.survey__container {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: .75rem;
+}
+
+.survey__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.survey__description {
+    margin-bottom: var(--mb-1);
+}
+
+.survey__img {
+    width: 300px;
+    position: absolute;
+    top: 4rem;
+    right: -8rem;
+    opacity: var(--overlap-opacity);
+}
 
 /*=============== EMAIL COLLECTION ===============*/
 .email__container {
@@ -681,6 +705,12 @@ img {
         position: initial;
     }
 
+    .survey__container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
     .footer__container {
         justify-content: start;
     }
@@ -736,6 +766,22 @@ img {
         font-size: var(--h2-font-size);
     }
 
+
+    .survey__container {
+        grid-template-columns: 300px max-content;
+        justify-content: center;
+        column-gap: 2.5rem;
+        padding: 3rem 0;
+    }
+
+    .survey__title {
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-1);
+    }
+
+    .survey__description {
+        margin-bottom: var(--mb-2);
+    }
 
     .survey__img {
         opacity: var(--full-opacity);
