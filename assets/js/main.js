@@ -104,4 +104,4 @@ sr.reveal(`.sponsor__img, .footer__logo, .footer__content, .footer__copy`, {orig
 sr.reveal(`.features__data, .email__animate, .survey__animate`, {origin: 'left', interval: 100})
 sr.reveal(`.features__img, .survey__img`, {origin: 'right'})
 sr.reveal(`.team__polaroid`, {origin: 'top'})
-sr.reveal(`.team__data`)
+sr.reveal(`.team__data, .cta_button__container`)

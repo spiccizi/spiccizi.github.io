@@ -418,6 +418,13 @@ img {
 }
 
 /*=============== EMAIL COLLECTION ===============*/
+.cta_button__container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 0 0
+}
+
+
 .email__container {
     position: relative;
     background-color: var(--container-color);
